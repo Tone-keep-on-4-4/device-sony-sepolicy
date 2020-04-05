@@ -50,7 +50,7 @@
 /odm/bin/cdsprpcd                               u:object_r:cdsprpcd_exec:s0
 /odm/bin/irsc_util                              u:object_r:irsc_util_exec:s0
 /odm/bin/mlog_qmi_service                       u:object_r:mlog_qmi_exec:s0
-/odm/bin/msm_irqbalance                         u:object_r:msm_irqbalanced_exec:s0
+/odm/bin/msm_irqbalance                         u:object_r:msm_irqbalance_exec:s0
 /odm/bin/netmgrd                                u:object_r:netmgrd_exec:s0
 /odm/bin/pm-service                             u:object_r:per_mgr_exec:s0
 /odm/bin/pm-proxy                               u:object_r:per_proxy_exec:s0
@@ -137,7 +137,6 @@
 
 # data files
 # TODO: Modify binaries to use /data/vendor/*
-/data/time(/.*)?                       u:object_r:timekeep_vendor_data_file:s0
 /data/(misc|vendor)/radio(/.*)?        u:object_r:radio_vendor_data_file:s0
 /data/(misc|vendor)/sensors(/.*)?      u:object_r:sensors_vendor_data_file:s0
 /data/vendor/netmgr(/.*)?              u:object_r:netmgr_data_file:s0

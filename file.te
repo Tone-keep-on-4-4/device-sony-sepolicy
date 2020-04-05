@@ -47,7 +47,7 @@ type persist_rfs_file, file_type;
 type persist_sensors_file, file_type;
 type persist_time_file, file_type;
 
-type rfs_system_file, file_type;
+type rfs_system_file, file_type, vendor_file_type;
 
 type netmgr_data_file, file_type, data_file_type;
 type rfs_file, file_type, data_file_type;
@@ -71,8 +71,8 @@ type keylayout_file, file_type, vendor_file_type;
 typeattribute sysfs_batteryinfo mlstrustedobject;
 
 # msm_irqbalance
-type proc_irq, fs_type;
-type sysfs_irq, fs_type;
+type proc_irq, proc_type, fs_type;
+type sysfs_irq, sysfs_type, fs_type;
 type irqbalance_socket, file_type;
 
 # /sys/kernel/boot_wlan/boot_wlan
