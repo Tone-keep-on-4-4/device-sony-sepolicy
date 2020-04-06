@@ -84,6 +84,7 @@
 /(system/vendor|vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.sony u:object_r:hal_fingerprint_default_exec:s0
 /(system/vendor|vendor)/bin/hw/android\.hardware\.gnss@1\.0-service-qti                      u:object_r:hal_gnss_qti_exec:s0
 /(system/vendor|vendor)/bin/hw/android\.hardware\.light@2\.0-service\.sony                   u:object_r:hal_light_default_exec:s0
+/(system/vendor|vendor)/bin/hw/android\.hardware\.health@2\.0-service\.sony                  u:object_r:hal_health_default_exec:s0
 
 # sysfs paths
 # Input device control nodes, mainly for CASH to control power
