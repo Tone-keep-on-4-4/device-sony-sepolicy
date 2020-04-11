@@ -101,6 +101,10 @@
 /sys/devices/virtual/input/input[0-9]+/als_(.*)+                                             u:object_r:sysfs_rgbc_sensor:s0
 # Real-time-clock
 /sys/class/rtc(/.*)?                                                                         u:object_r:sysfs_rtc:s0
+# Glove mode:
+# Clearpad: /sys/devices/virtual/input/clearpad/glove:
+/sys/devices/virtual/input/input[0-9]+/glove                                                 u:object_r:sysfs_glove_mode:s0
+/sys/devices/virtual/input/lge_touch/glove_mode                                              u:object_r:sysfs_glove_mode:s0
 
 ###############################################
 # same-process HAL files and their dependencies
@@ -158,6 +162,7 @@
 /bt_firmware(/.*)?        u:object_r:bt_firmware_file:s0
 
 # /persist
+/persist/battery(/.*)?    u:object_r:persist_battery_file:s0
 /persist(/.*)?            u:object_r:persist_file:s0
 /persist/data(/.*)?       u:object_r:persist_data_file:s0
 /persist/display(/.*)?    u:object_r:persist_display_file:s0

@@ -2,6 +2,7 @@ type sysfs_camera, sysfs_type, fs_type;
 type sysfs_clkscale, sysfs_type, fs_type;
 type sysfs_console_suspend, sysfs_type, fs_type;
 type sysfs_fingerprint, sysfs_type, fs_type;
+type sysfs_glove_mode, sysfs_type, fs_type;
 type sysfs_graphics, sysfs_type, fs_type;
 type sysfs_mdss_mdp_caps, sysfs_type, fs_type;
 type sysfs_msm_subsys, sysfs_type, fs_type;
@@ -90,3 +91,7 @@ type sysfs_tof_sensor, fs_type, sysfs_type;
 type sysfs_rgbc_sensor, fs_type, sysfs_type;
 
 type sysfs_usb_supply, sysfs_type, fs_type;
+
+# /proc/sys/*
+type proc_kernel_printk, proc_type, fs_type;
+type proc_swappiness, proc_type, fs_type;
