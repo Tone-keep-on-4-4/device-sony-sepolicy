@@ -1,1 +1,2 @@
 vendor.display.config::IDisplayConfig                       u:object_r:hal_display_config_hwservice:s0
+vendor.qti.hardware.perf::IPerf                              u:object_r:hal_perf_hwservice:s0

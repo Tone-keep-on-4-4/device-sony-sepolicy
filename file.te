@@ -95,3 +95,6 @@ type sysfs_usb_supply, sysfs_type, fs_type;
 # /proc/sys/*
 type proc_kernel_printk, proc_type, fs_type;
 type proc_swappiness, proc_type, fs_type;
+
+#type for thermal-engine
+type thermal_socket, file_type;
